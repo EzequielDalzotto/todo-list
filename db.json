@@ -31,10 +31,10 @@
       "reminder": false
     },
     {
-      "text": "Nueva Tarea",
-      "day": "Mañana",
+      "text": "Decirle a mi tiquitita que la amo muto",
+      "day": "TIEMPRE",
       "reminder": true,
-      "id": 6
+      "id": 7
     }
   ]
 }
