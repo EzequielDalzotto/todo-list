@@ -29,6 +29,12 @@
       "text": "Quinto task a terminar",
       "day": "Jul 6 a las 15:00 pm",
       "reminder": false
+    },
+    {
+      "text": "Nueva Tarea",
+      "day": "Mañana",
+      "reminder": true,
+      "id": 6
     }
   ]
 }
