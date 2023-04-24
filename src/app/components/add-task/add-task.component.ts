@@ -25,21 +25,23 @@ export class AddTaskComponent {
   onSubmit(){
     if(this.text.length === 0){
       alert("Please add a text")
-    }
-    if(this.day.length === 0){
+    }else if(this.day.length === 0){
       alert("Please add a date")
+    }else{
+      const{text,day,reminder} = this
+      const newTask = {text,day,reminder}
+      //Es lo mismo que arriba pero de forma mas clara 
+      // const newTask = {
+      //   text: this.text,
+      //   day: this.day,
+      //   reminder: this.reminder
+      // }
+
+      this.onAddTask.emit(newTask);
     }
+    
 
-    const{text,day,reminder} = this
-    const newTask = {text,day,reminder}
-    //Es lo mismo que arriba pero de forma mas clara 
-    // const newTask = {
-    //   text: this.text,
-    //   day: this.day,
-    //   reminder: this.reminder
-    // }
-
-    this.onAddTask.emit(newTask);
+    
   }
 
   
